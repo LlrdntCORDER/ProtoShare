@@ -22,16 +22,17 @@ def display_entries(df, titre_filter):
 
 def show_details(row_data):
     st.markdown(f"""
-        <div style="background-color: #f0f0f0; padding: 20px; border-radius: 15px; width: 100%;">
-            <h2>{row_data['Titre']}</h2>
-            <p><strong>Organisme:</strong> {row_data['Organisme']}</p>
-            <p><strong>Date de publication:</strong> {row_data['Date de publication']}</p>
-            <p><strong>Objectifs:</strong> {row_data['Objectifs']}</p>
-            <p><strong>Mots clés:</strong> {row_data['Mots clés']}</p>
-            <p><strong>Lien d'accès:</strong> <a href="{row_data['Lien d\'accès']}">Accéder</a></p>
-            <p><strong>Collaborateurs:</strong> {row_data['Collaborateurs']}</p>
-        </div>
-    """, unsafe_allow_html=True)
+    <div style="background-color: #f0f0f0; padding: 20px; border-radius: 15px; width: 100%;">
+        <h2>{row_data['Titre']}</h2>
+        <p><strong>Organisme:</strong> {row_data['Organisme']}</p>
+        <p><strong>Date de publication:</strong> {row_data['Date de publication']}</p>
+        <p><strong>Objectifs:</strong> {row_data['Objectifs']}</p>
+        <p><strong>Mots clés:</strong> {row_data['Mots clés']}</p>
+        <p><strong>Lien d'accès:</strong> <a href='{row_data["Lien d'accès"]}'>Accéder</a></p>
+        <p><strong>Collaborateurs:</strong> {row_data['Collaborateurs']}</p>
+    </div>
+""", unsafe_allow_html=True)
+
 
 # Interface Streamlit
 st.title('Cadastre')
