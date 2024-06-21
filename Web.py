@@ -38,7 +38,7 @@ def show_details(row_data):
 st.title('Cadastre')
 
 # Charger les données
-file_path = 'Cadastre/20220425_CADASTRESEM.xlsx'
+file_path = 'https://github.com/LlrdntCORDER/ProtoShare/blob/main/20220425_CADASTRESEM.xlsx'
 df = load_data(file_path)
 
 # Barre de recherche pour le titre sans autocomplétion
