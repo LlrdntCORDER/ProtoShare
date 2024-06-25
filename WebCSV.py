@@ -36,7 +36,7 @@ def show_details(row_data):
 st.title('Cadastre')
 
 # Charger les données
-file_path = 'Cadastre\\20220425_CADASTRESEM.csv'  # Chemin vers le fichier CSV
+file_path = 'https://raw.githubusercontent.com/LlrdntCORDER/ProtoShare/main/20220425_CADASTRESEM.csv'  # Chemin vers le fichier CSV
 df = load_data(file_path)
 
 # Barre de recherche pour le titre sans autocomplétion
