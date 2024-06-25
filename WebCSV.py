@@ -33,7 +33,7 @@ def show_details(row_data):
     """, unsafe_allow_html=True)
 
 # Interface Streamlit
-st.title('Cadastre = Répertoire d’expertises et d’experts en matière de réduction de PPP')
+st.title('Cadastre: Répertoire d’expertises et d’experts en matière de réduction de PPP')
 
 # Charger les données
 file_path = 'https://raw.githubusercontent.com/LlrdntCORDER/ProtoShare/main/20220425_CADASTRESEM.csv'  # Chemin vers le fichier CSV
